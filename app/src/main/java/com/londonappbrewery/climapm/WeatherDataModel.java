@@ -1,11 +1,24 @@
 package com.londonappbrewery.climapm;
 
+import org.json.JSONObject;
+
 public class WeatherDataModel {
 
     // TODO: Declare the member variables here
+    private String mTemperature;
+    private int mCondition;
+    private String mCity;
+    private String mIconName;
 
-
+    // manages all the weather data
     // TODO: Create a WeatherDataModel from a JSON:
+    public static WeatherDataModel fromJson(JSONObject jsonObject) {
+
+        WeatherDataModel weatherData = new WeatherDataModel();
+
+
+        return weatherData;
+    }
 
 
     // TODO: Uncomment to this to get the weather image name from the condition:
