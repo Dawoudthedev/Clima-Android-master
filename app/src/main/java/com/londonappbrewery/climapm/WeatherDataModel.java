@@ -73,7 +73,7 @@ public class WeatherDataModel {
 
     // TODO: Create getter methods for temperature, city, and icon name:
 
-
+    // methods use the get temp, city, icon name to update UI
     public String getTemperature() {
         return mTemperature + "°";
     }

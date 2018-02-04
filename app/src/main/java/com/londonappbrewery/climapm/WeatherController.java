@@ -2,6 +2,7 @@ package com.londonappbrewery.climapm;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -67,10 +68,14 @@ public class WeatherController extends AppCompatActivity {
 
 
         // TODO: Add an OnClickListener to the changeCityButton here:
+        // created onClickListener for changeCityButton to switch to different activity
         changeCityButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                // Intent is used to navigate from weather_controller layout to change_city layout
+                Intent myIntent = new Intent(WeatherController.this, ChangeCityController.class);
+                startActivity(myIntent);
             }
         });
 
